@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akutduon</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        color: #222;
+        background: #f7f8fa;
+        line-height: 1.6;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #0a3d62;
+        margin-top: 0;
+      }
+      a {
+        color: #0a84ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      section {
+        padding: 40px 0;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+      }
+      .cols-2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .cols-3 {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .card {
+        background: #fff;
+        padding: 24px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .feature h3 {
+        margin-top: 0;
+        color: #0077b6;
+      }
+      .sub {
+        color: #555;
+        font-style: italic;
+        margin-bottom: 30px;
+      }
+
+      .quote {
+        border-left: 4px solid #0a84ff;
+        background: #f0f6ff;
+        font-style: italic;
+        margin-top: 20px;
+      }
+
+      footer {
+        background: #0a3d62;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      footer a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="tjanster">
+        <div class="container">
+          <h2>Tjänster</h2>
+          <p class="sub">
+            Upplägg enligt svenska riktlinjer. Certifikat till alla deltagare.
+          </p>
+          <div class="grid cols-3">
+            <article class="card feature">
+              <h3>HLR Grund</h3>
+              <p>
+                Hjärt-lungräddning för vuxna, luftvägsstopp och stabilt
+                sidoläge.
+              </p>
+            </article>
+            <article class="card feature">
+              <h3>D-HLR</h3>
+              <p>
+                Defibrillering med hjärtstartare, kedjan som räddar liv och
+                teamarbete.
+              </p>
+            </article>
+            <article class="card feature">
+              <h3>Första hjälpen</h3>
+              <p>
+                Blödningar, brännskador, sjukdomsfall och akuta situationer på
+                arbetsplatsen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="om">
+        <div class="container">
+          <h2>Om Akutduon</h2>
+          <div class="grid cols-2">
+            <div>
+              <p>
+                Vi är certifierade instruktörer med mångårig erfarenhet från
+                akutsjukvård och utbildning.
+                <strong
+                  >Mer än 20 års erfarenhet från ambulanssjukvård och
+                  räddningstjänst.</strong
+                >
+                Vårt mål är att göra livräddning enkel, trygg och effektiv – för
+                alla.
+              </p>
+              <div class="quote card">
+                <p>
+                  “Tydlig, engagerande och hands-on. Hela personalen kände sig
+                  trygga efter passet.”
+                </p>
+                <small>– Kund inom industri</small>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Varför välja oss?</h3>
+              <ul>
+                <li>Utbildning på plats hos er</li>
+                <li>Små grupper & mycket praktik</li>
+                <li>Material och checklista ingår</li>
+                <li>Intyg och dokumentation efteråt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt">
+        <div class="container">
+          <h2>Kontakt</h2>
+          <p class="sub">
+            Besök
+            <a href="https://www.akutduon.se" target="_blank"
+              >www.akutduon.se</a
+            >
+            så hjälper vi ditt företag eller förening att hålla er uppdaterade i
+            Hjärt- och Lungräddning.
+          </p>
+          <div class="grid cols-2">
+            <div class="card">
+              <h3>Snabbkontakt</h3>
+              <p><strong>Akutduon</strong></p>
+              <p>
+                Vi utgår från Sverige och utbildar på plats hos företag och
+                föreningar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Akutduon. Alla rättigheter förbehållna.
+        <br /><a href="#top">Till toppen ↑</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
